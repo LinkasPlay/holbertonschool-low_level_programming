@@ -1,7 +1,14 @@
 #include "main.h"
 
 /**
- *libre
+ * libre
+ *
+ *
+ *
+ *
+ *
+ *
+ *
  */
 int _atoi(char *s)
 {
