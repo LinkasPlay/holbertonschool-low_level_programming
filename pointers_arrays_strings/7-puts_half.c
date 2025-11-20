@@ -1,7 +1,13 @@
 #include "main.h"
 
 /**
- * wtf
+ * puts_half - Prints the second half of a string,
+ * followed by a new line
+ * @str: Pointer to the string to print
+ *
+ * Description: If the string length is odd, prints the last
+ * (length + 1) / 2 characters. If even, prints the last
+ * length / 2 characters. Uses _putchar to print.
  */
 void puts_half(char *str)
 {
