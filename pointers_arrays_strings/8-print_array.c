@@ -1,8 +1,15 @@
 #include "main.h"
 #include <stdio.h>
 
+
 /**
- * graou
+ * print_array - Prints n elements of an array of integers,
+ * followed by a new line
+ * @a: Pointer to the first element of the array
+ * @n: Number of elements to print
+ *
+ * Description: Prints the elements in the same order as stored,
+ * separated by a comma and a space. Uses printf.
  */
 void print_array(int *a, int n)
 {
