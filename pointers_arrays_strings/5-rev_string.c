@@ -1,7 +1,11 @@
 #include "main.h"
 
 /**
- * bouboubou
+ * rev_string - Reverses a string
+ * @s: Pointer to the string to reverse
+ *
+ * Description: This function reverses the content of the string
+ * in place by swapping characters from both ends moving inward.
  */
 void rev_string(char *s)
 {
