@@ -1,14 +1,14 @@
 #include "main.h"
 
 /**
- * libre
+ * _atoi - Converts a string to an integer
+ * @s: Pointer to the string to convert
  *
+ * Description: This function ignores any non-digit characters
+ * before the number. It handles multiple + and - signs.
+ * If no digits are found, returns 0.
  *
- *
- *
- *
- *
- *
+ * Return: The integer value of the string
  */
 int _atoi(char *s)
 {
