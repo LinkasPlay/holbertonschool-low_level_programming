@@ -1,7 +1,13 @@
 #include "main.h"
 
 /**
- * ourquoi on peut pas prontf :(
+ * puts2 - Prints every other character of a string,
+ * starting with the first character, followed by a new line
+ * @str: Pointer to the string to print
+ *
+ * Description: This function iterates through the string,
+ * printing every other character using _putchar, then prints
+ * a newline.
  */
 void puts2(char *str)
 {
