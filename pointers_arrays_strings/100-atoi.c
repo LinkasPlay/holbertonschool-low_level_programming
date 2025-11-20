@@ -1,14 +1,14 @@
 #include "main.h"
 
 /**
- * _atoi - Converts a string to an integer
+ * _atoi - Converts a string to an integer safely
  * @s: Pointer to the string to convert
  *
- * Description: This function ignores any non-digit characters
- * before the number. It handles multiple + and - signs.
- * If no digits are found, returns 0.
+ * Description: Handles multiple + and - signs, ignores
+ * non-digit characters before the number, stops after digits.
+ * Avoids signed integer overflow.
  *
- * Return: The integer value of the string
+ * Return: The integer value
  */
 int _atoi(char *s)
 {
@@ -23,17 +23,21 @@ int _atoi(char *s)
 			sign *= -1;
 		else if (s[i] == '+')
 		{
-			/* Do nothing, sign already handled */
+			/* Do nothing */
 		}
 		else if (s[i] >= '0' && s[i] <= '9')
 		{
 			digit_found = 1;
-			result = result * 10 + (s[i] - '0');
+			if (sign == 1)
+				result = result * 10 + (s[i] - '0');
+			else
+				result = result * 10 - (s[i] - '0');
 		}
 		else if (digit_found)
-			break; /* Stop when digits ended */
+			break;
 		i++;
 	}
 
-	return (sign * result);
+	return (result);
 }
+
