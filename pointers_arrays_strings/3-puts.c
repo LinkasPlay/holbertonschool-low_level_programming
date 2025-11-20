@@ -1,7 +1,12 @@
 #include "main.h"
 
+
 /**
- * gougougac
+ * _puts - Prints a string followed by a new line
+ * @str: Pointer to the string to print
+ *
+ * Description: This function prints each character of the
+ * string using _putchar, then prints a newline.
  */
 void _puts(char *str)
 {
