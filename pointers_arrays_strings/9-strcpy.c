@@ -1,7 +1,15 @@
 #include "main.h"
 
 /**
- * moi quand je la copie wouhou
+ * _strcpy - Copies the string pointed to by src,
+ * including the terminating null byte, to dest
+ * @dest: Pointer to the destination buffer
+ * @src: Pointer to the source string
+ *
+ * Description: Copies each character from src to dest
+ * until the null terminator is copied. Returns dest.
+ *
+ * Return: Pointer to dest
  */
 char *_strcpy(char *dest, char *src)
 {
